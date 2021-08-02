@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunnySide Agency</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+        <nav>
+            <a href=""><img src="./assets/images/logo.svg"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="" class="nav-item">About</a></li>
+                    <li><a href="" class="nav-item">Services</a></li>
+                    <li><a href="" class="nav-item">Project</a></li>
+                    <li><a href="" class="nav-btn">CONTACT</a></li>
+                </ul>
+                <img src="./assets/images/icon-hamburger.svg" onclick="showMenu">
+            </div>
+        </nav>
+        <div class="div-content">
+            <h1>WE ARE CREATIVES</h1>
+            <img src="./assets/images/icon-arrow-down.svg">
+        </div>
+  </div>
+
+  <section class="services">
+      <div class="row">
+          <div class="services-col col-text">
+              <h2>Transform your <br>brand</h2>
+              <p>
+                  We are a full-service creative agency specializing in helping brands grow fast. 
+                  Engage your clients through compelling visuals that do most of the marketing for you.
+                </p>
+                <a href="" class="col-links">LEARN MORE</a>
+          </div>
+          <div class="services col col-img">
+              <img src="./assets/images/desktop/image-transform.jpg">
+          </div>
+          <div class="services-col col-img">
+             <img src="./assets/images/desktop/image-stand-out.jpg"> 
+          </div>
+          <div class="services-col col-text">
+              <h2>Stand out to the right audience</h2>
+              <p>
+                Using a collaborative formula of designers, researchers, photographers, videographers, 
+                and copywriters, we’ll build and extend your brand in digital places.
+              </p>
+              <a href="" class="col-links">LEARN MORE</a>
+          </div>
+          <div class="services-col bg-image bg-image1">
+              <aside class="aside1">
+                <h4>Graphic Design</h4>
+                <p>
+                  Great design makes you memorable. We deliver artwork that 
+                  underscores your brand message and captures potential client’s attention
+                </p>
+              </aside>
+          </div>
+          <div class="services-col bg-image bg-image2">
+              <aside class="aside2">
+                <h4>Photography</h4>
+                <p>
+                    Increase your credibility by getting the most stunning, 
+                    high-quality photos that improve your business image.
+                </p>
+              </aside>
+          </div>
+      </div>
+  </section>
+
+  <section class="testimonials">
+      <h2>CLIENT TESTIMONIAL</h2>
+      <div class="row">
+          <div class="testimonials-col">
+            <img src="./assets/images/image-emily.jpg">
+            <p class="testimonies">
+                We put our trust in Sunnyside and they delivered, 
+                making sure our needs were met and deadlines were always hit.
+            </p>
+            <div class="testifier">
+                <h3>Emely R.</h3>
+                <p>Marketing Director</p>
+            </div>
+            
+          </div>
+          <div class="testimonials-col">
+              <img src="./assets/images/image-thomas.jpg">
+              <p class="testimonies">
+                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s 
+                success made it a satisfying and enjoyable experience.
+              </p>
+              <div class="testifier">
+                <h3>Thomas S.</h3>
+                <p>Chief Operating Officer</p>
+              </div>
+          </div>
+          <div class="testimonials-col">
+              <img src="./assets/images/image-jennie.jpg">
+              <p class="testimonies">
+                Incredible end result! Our sales increased over 400% when we worked with 
+                Sunnyside. Highly recommended!
+              </p>
+              <div class="testifier">
+                <h3>Jennie F.</h3>
+                <p>Business Owner</p>
+              </div>
+              
+          </div>
+      </div>
+    </section>
+
+    <section class="products">
+        <div class="row">
+            <div class="products-col">
+                <img src="./assets/images/desktop/image-gallery-milkbottles.jpg">
+            </div>
+            <div class="products-col">
+                <img src="./assets/images/desktop/image-gallery-orange.jpg">
+            </div>
+            <div class="products-col">
+                <img src="./assets/images/desktop/image-gallery-cone.jpg">
+            </div>
+            <div class="products-col">
+                <img src="./assets/images/desktop/image-gallery-sugarcubes.jpg">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h4>sunnyside</h4>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+        </ul>
+        <div class="icons">
+            <img src="./assets/images/icon-facebook.svg">
+            <img src="./assets/images/icon-instagram.svg">
+            <img src="./assets/images/icon-twitter.svg">
+            <img src="./assets/images/icon-pinterest.svg">
+        </div>
+    </footer>
+
+
+
+    <!-- ---------JavaScript FOr Toggle Menu------- -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        // function hideMenu() {
+        //     navLinks.style.right = "-200px"
+        // }
+    </script>
+</body>
+</html>
