@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .header{
     background: url("./images/desktop/image-header.jpg");
@@ -11,43 +12,29 @@
     position: relative;
 }
 nav{
-    padding: 3%;
+    padding: 2% 3%;
     display: flex;
     justify-content: space-between;
 }
-.header img{
-    width: 180px;
+.header-img{
+    width: 200%;
 }
-.nav-links ul{
-    flex: 1;
-    text-align: right;
+.nav-menu{
+    padding: 1% 0%;
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
 }
-.nav-links ul li{
+.nav-item{
     list-style-type: none;
     display: inline-block;
 }
-.nav-links ul li a{
+.nav-links{
     text-decoration: none;
-    padding: 12px 15px;
-}
-.nav-btn{
-    color: black;
-    background-color: hsl(0, 0%, 100%);
-    width: 150px;
-    border-radius: 50px;
-    border: 0px;
-    font-size: 15px;
-    
-}
-.nav-btn:hover{
     color: hsl(0, 0%, 100%);
-    background-color: rgb(0, 203, 242);
+    font-size: 20px;
 }
-.nav-item{
-    color: hsl(0, 0%, 100%);
-    font-size: 1.25rem;
-}
-.nav-links img{
+.hamburger{
     display: none;
 }
 .div-content{
@@ -59,51 +46,68 @@ nav{
     text-align: center;
 }
 .div-content h1{
+    width: 95%;
+    margin: auto;
     color: hsl(0, 0%, 100%);
     font-family: 'Fraunces', serif;
     letter-spacing: 0.1em;
-    font-size: 3.75rem;
+    font-size: 3.25rem;
 }
 .div-content img{
     padding-top: 50px;
     height: 130px;
     width: 25px;
 }
-@media (max-width: 700px) {
-    .header img{
-        padding: 3% 20%;
+@media screen and (max-width: 1024px) {
+    .nav-menu{
+        width: 60%;
     }
-    .nav-links ul{
-        padding: 30px;
+}
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
     }
-    .nav-links ul li{
-        display: block;
-        padding: 20px 0px;
+    .header{
+        margin: auto;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
     }
-    .nav-links{
+    .header-img{
+        padding: 4% 5%;
+        width: 200%;
+    }
+    .nav-menu{
         position: absolute;
-        background: rgb(0, 203, 242);
-        height: 80vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
+        width: 30%;
+        right: 0%;
+        height: 93vh;
+        top: 7%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 203, 242);
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in ;
     }
-    .nav-links img{
-        position: relative;
+
+    .hamburger{
+        color: rgb(0, 203, 242);
         display: block;
+        position: absolute;
+        right: 11%;
+        top: 6%;
         width: 40px;
         cursor: pointer;
-        padding: 40px 30px;
-        left: -50%;
-        top: -78%;
     }
     .div-content h1{
         font-size: 2.5rem;
     }
+    
 }
-
+.nav-active{
+    transform: translateX(0%);
+}
 
 
 /* services */
@@ -227,7 +231,7 @@ aside p{
 .testimonials-col img{
     display: block;
     width: 90px;
-    padding: 2% 35%;
+    padding: 2% 40%;
     border-radius: 100%;
 }
 .testimonies{
@@ -254,6 +258,10 @@ aside p{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+    .testimonials-col{
+        width: 75%;
+        margin: auto;
+    }
 }
 
 
@@ -267,6 +275,17 @@ aside p{
 .products-col img{
     width: 100%;
     padding-bottom: 0px;
+}
+@media (max-width: 700px) {
+    .products .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 0px;
+    }
+    .products-col img{
+        width: 100%;
+    }
 }
 
 

@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="./assets/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"/>
 </head>
+
 <body>
   <div class="header">
-        <nav>
-            <a href=""><img src="./assets/images/logo.svg"></a>
-            <div class="nav-links" id="navLinks">
-                <ul>
-                    <li><a href="" class="nav-item">About</a></li>
-                    <li><a href="" class="nav-item">Services</a></li>
-                    <li><a href="" class="nav-item">Project</a></li>
-                    <li><a href="" class="nav-btn">CONTACT</a></li>
-                </ul>
-                <img src="./assets/images/icon-hamburger.svg" onclick="showMenu">
-            </div>
-        </nav>
+    <nav class="navbar">
+        <a href="" class="nav-logo"><img src="./assets/images/logo.svg" class="header-img"></a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-links">Home</a></li>
+            <li class="nav-item"><a class="nav-links">About</a></li>
+            <li class="nav-item"><a class="nav-links">Products</a></li>
+            <li class="nav-item"><a class="nav-links">Services</a></li>
+            <li class="nav-item"><a class="nav-links">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <img src="./assets/images/icon-hamburger.svg">
+        </div>
+    </nav>
         <div class="div-content">
             <h1>WE ARE CREATIVES</h1>
             <img src="./assets/images/icon-arrow-down.svg">
@@ -147,17 +150,7 @@
         </div>
     </footer>
 
-
-
-    <!-- ---------JavaScript FOr Toggle Menu------- -->
-    <script>
-        let navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        // function hideMenu() {
-        //     navLinks.style.right = "-200px"
-        // }
-    </script>
+    
+    <script src="./assets/app.js"></script>
 </body>
 </html>
